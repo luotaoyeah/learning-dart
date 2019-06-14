@@ -4,12 +4,12 @@
 
 void main() {
   /*
-   * dart 支持箭头函数(arrow function),
-   * 并且支持将 arrow function 作为参数传递
+   * dart 支持箭头函数(arrow function)
    */
 
   // 可以将一个 arrow function 赋值为一个 variable
   void Function(int i) cb = (int i) => {print((i * i).toString())};
+  // 可以将 arrow function 作为参数传递
   fn01(cb);
 
   fn02();
