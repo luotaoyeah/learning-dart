@@ -3,12 +3,14 @@
  */
 
 void main() {
-  C c = new C();
+  C01 c = new C01();
   assert(c.fn01() == 9);
 }
 
-class C {
-  /// declare a method
+class C01 {
+  /*
+   * 定义一个方法
+   */
   int fn01() {
     return 9;
   }
