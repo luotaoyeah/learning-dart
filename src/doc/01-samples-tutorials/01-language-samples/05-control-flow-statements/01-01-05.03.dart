@@ -3,7 +3,13 @@
  */
 
 void main() {
-  for (int i = 1; i <= 3; i++) {
+  int i = 1;
+
+  /*
+   * 支持 while 循环
+   */
+  while (i <= 3) {
     print(i);
+    ++i;
   }
 }
