@@ -5,6 +5,7 @@
 void main() {
   assert(fn01(y: 9) == 9);
   assert(fn02(9) == 9);
+  assert(fn03() == '[1, 2, 3]');
 }
 
 /*
@@ -18,4 +19,12 @@ int fn01({int x = 0, int y}) {
 
 int fn02(int x, [int y = 0, int z]) {
   return x + y;
+}
+
+/*
+ * default value 必须是一个 constant,
+ * 因此如果参数的类型为 list 或者 map, 则必须使用 const 来设置一个不可变的默认值
+ */
+String fn03({List<int> arr01 = const [1, 2, 3]}) {
+  return arr01.toString();
 }
