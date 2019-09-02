@@ -36,4 +36,10 @@ void fn02() {
   }
 
   assert(fn02(fn01) == 4);
+
+  int fn03(int cb(int i)) {
+    return cb(2);
+  }
+
+  assert(fn03(fn01) == 4);
 }
