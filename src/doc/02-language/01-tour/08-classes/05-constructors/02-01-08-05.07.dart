@@ -26,7 +26,8 @@ class C01 {
 
   /*
    * 在定义 constructor 的时候, 如果 constructor 前面加上 `const`, 表示这是一个 constant constructor,
-   * 要定义一个 constant constructor, 则该类的所有属性必须都是 final 属性
+   * 要定义一个 constant constructor, 则该类的所有属性必须都是 final 属性,
+   * constant constructor 的 body 必须为空
    */
   const C01.fn02(this.x, this.y);
 }
