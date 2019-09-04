@@ -17,7 +17,7 @@ void fn01() {
 class C01 {
   /*
    * 当声明一个属性时, 实际上会隐式地创建一个 getter/setter,
-   * 如果属性声明为 final, 则只会隐式地创建一个 getter
+   * 如果属性声明为 final, 则只会隐式地创建一个 getter, 没有 setter
    */
   num x = 0;
 
@@ -29,7 +29,7 @@ class C01 {
   num z;
 
   /*
-   * 可以在声明属性的时候进行初始化,
+   * 可以在声明属性的同时进行初始化,
    * 也可以在 constructor 中进行初始化
    */
   C01(this.z);
