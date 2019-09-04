@@ -27,7 +27,8 @@ class C02 extends C01 {
   final String z;
 
   /*
-   * 在调用 super constructor 之前, 可以包含多个 initializer, 使用逗号分隔, 称之为 initializer list
+   * 在调用 super constructor 之前, 可以包含多个 initializer, 使用逗号分隔, 称之为 initializer list,
+   * 如果调用了 super constructor, 则 super constructor 必须在 initializer list 的最后面, 使用逗号分隔
    */
   C02.fn01(String y)
       : y = y.toUpperCase(),
