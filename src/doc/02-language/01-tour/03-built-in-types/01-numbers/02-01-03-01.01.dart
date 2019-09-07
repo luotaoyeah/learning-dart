@@ -9,7 +9,7 @@ void main() {
 
 void fn01() {
   /*
-   * 数字类型有两种 int 和 double, 继承关系如下:
+   * 数字类型有两种, 继承关系如下:
    *   num
    *     int
    *     double

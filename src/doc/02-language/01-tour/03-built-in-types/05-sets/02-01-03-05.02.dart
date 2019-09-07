@@ -9,7 +9,7 @@ void main() {
 
 void fn01() {
   /*
-   * 使用 const 来定义一个不可变的 set
+   * 使用 `const` 来定义一个不可变的 set
    */
 
   var set01 = const {1, 2, 3};

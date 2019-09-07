@@ -22,7 +22,7 @@ void fn01() {
 
 void fn02() {
   /*
-   * 在 string literal 中可以使用 ${expression} 或者 $variable 来嵌入表达式的值
+   * 在 string literal 中可以使用 `${expression}` 或者 `$variable` 来嵌入表达式的值
    */
 
   int i01 = 9;
@@ -32,7 +32,7 @@ void fn02() {
 
 void fn03() {
   /*
-   * 可以使用 + 来连接多个字符串
+   * 可以使用 `+` 来连接多个字符串
    */
 
   String s01 = "F" + "O";
@@ -42,8 +42,7 @@ void fn03() {
 
 void fn04() {
   /*
-   * 可以直接将多个 string literal 挨着放置, 中间可以使用空格或者换行来分隔,
-   * 其结果是将它们连接在一起,
+   * 可以直接将多个 string literal 挨着放置, 中间可以使用空格或者换行来分隔, 其结果是将它们连接在一起,
    * 可以用这种方式来实现: 一个字符串跨越多行
    */
 
@@ -75,8 +74,8 @@ void fn06() {
   print(s01);
 
   /*
-   * 如果字符串前面加上 r 前缀, 表示这个字符串是一个 raw string,
-   * 表示中间的转义字符会被当成普通字符
+   * 如果字符串前面加上 `r` 前缀, 表示这个字符串是一个 raw string,
+   * 中间的转义字符会被当成普通字符, 不会被转义
    */
   String s02 = r"HELLO\tWORLD";
   print(s02);

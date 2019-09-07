@@ -20,7 +20,7 @@ void fn01() {
 
 void fn02() {
   /*
-   * 使用 const 来声明一个值不可变的 list
+   * 使用 `const` 来声明一个值不可变的 list
    */
 
   var list01 = const [1, 2, 3];
