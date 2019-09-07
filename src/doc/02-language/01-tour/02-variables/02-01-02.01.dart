@@ -10,7 +10,7 @@ void main() {
 
 void fn01() {
   /*
-   * 使用 `var` 声明变量, 变量的类型会自动推断
+   * 使用 `var` 声明变量, 变量的类型会被自动推断
    */
   var v01 = "FOO";
   assert(v01 is String);

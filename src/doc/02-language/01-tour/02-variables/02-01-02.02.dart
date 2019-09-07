@@ -3,8 +3,12 @@
  */
 
 void main() {
+  fn01();
+}
+
+void fn01() {
   /*
-   * 由于 dart 中所有的值都是 object 类型, 如果一个变量没有初始化, 则它的默认值为 null
+   * 由于 dart 中所有的值都是 `object` 类型, 如果一个变量没有初始化, 则它的默认值为 `null`
    */
 
   int i01;
