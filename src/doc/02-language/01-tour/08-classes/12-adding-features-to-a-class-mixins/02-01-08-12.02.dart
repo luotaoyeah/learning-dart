@@ -6,13 +6,6 @@ void main() {
   fn01();
 }
 
-/*
- * mixin 是一类特殊的 class, 具有以下特点:
- *   1. 父类必须是 Object
- *   2. 不能声明 constructor
- *   3. class 关键字可以替换为 mixin 关键字
- */
-
 class C01 {}
 
 mixin Mixin01 {
@@ -20,7 +13,7 @@ mixin Mixin01 {
 }
 
 /*
- * 使用 `on SomeClass` 表示, 只有 `SomeClass` 及其子类才可以使用这个 mixin
+ * 使用 `on SomeClass` 表示只有 `SomeClass` 及其子类才可以使用这个 mixin
  */
 mixin Mixin02 on C01 {
   int y = 9;
