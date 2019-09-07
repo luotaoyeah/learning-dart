@@ -7,9 +7,9 @@ void main() {
 }
 
 /*
- * ?. 跟 . 的区别在于:
- *   如果 x.y 中的 x 为 null, 则会报错,
- *   如果 x?.y 中的 x 为 null, 不会报错, 结果为 null
+ * `?.` 跟 `.` 的区别在于:
+ *   如果 x.y 中的 x 为 `null`, 则会报错,
+ *   如果 x?.y 中的 x 为 `null`, 不会报错, 结果为 `null`
  */
 void fn01() {
   var v01 = null;

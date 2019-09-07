@@ -8,8 +8,8 @@ void main() {
 }
 
 /*
- * expr1 ?? expr2
- * 这种表达式的含义是: 如果 expr1 不为 null 则返回 expr1, 否则返回 expr2
+ * `expr1 ?? expr2`
+ * 这种表达式的含义是: 如果 expr1 不为 `null` 则返回 expr1, 否则返回 expr2
  */
 void fn01() {
   int fn01(int x, int y) {
@@ -20,7 +20,7 @@ void fn01() {
 }
 
 /*
- * 如下使用更复杂的代码实现跟 ?? 相同的效果
+ * 如下使用更复杂的代码实现跟 `??` 相同的效果
  */
 void fn02() {
   int fn01(int x, int y) {
