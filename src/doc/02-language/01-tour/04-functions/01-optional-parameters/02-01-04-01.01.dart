@@ -14,8 +14,8 @@ void main() {
 
 /*
  * 函数的参数有两种形式:
- *   named parameters
- *   positional parameters
+ *   1. named parameters
+ *   2. positional parameters
  * 这两种形式不能同时使用
  */
 

@@ -8,30 +8,22 @@ void main() {
 }
 
 /*
- * 如果没有声明函数的返回类型(或者函数的返回类型声明为 dynamic), 并且函数没有返回数据, 则函数的返回值为 null
+ * 如果没有声明函数的返回类型(或者函数的返回类型声明为 dynamic), 并且函数没有返回数据, 则函数的返回值为 `null`
  */
 void fn01() {
-  fn01() {
-    print('FOO');
-  }
+  fn01() {}
 
-  var r01 = fn01();
-  assert(r01 == null);
+  assert(fn01() == null);
 
-  dynamic fn02() {
-    print('FOO');
-  }
+  dynamic fn02() {}
 
-  var r02 = fn02();
-  assert(r02 == null);
+  assert(fn02() == null);
 }
 
 void fn02() {
   fn01() {
-    print('BAR');
     return 9;
   }
 
-  var r01 = fn01();
-  assert(r01 == 9);
+  assert(fn01() == 9);
 }

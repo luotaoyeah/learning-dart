@@ -6,6 +6,7 @@ import 'dart:math';
 
 void main() {
   fn01();
+  fn06();
 }
 
 /*
@@ -16,7 +17,7 @@ fn01() {
 }
 
 /*
- * 如果函数中所有的内容, 只是返回一个表达式, 则可以使用如下的简写形式
+ * 如果函数体中只有一条语句, 则可以使用如下的简写形式
  */
 
 bool fn03() {
@@ -25,7 +26,6 @@ bool fn03() {
 
 bool fn04() => Random().nextBool();
 
-/*
- * 上面这种形式跟箭头函数, 有些类似
- */
 var fn05 = () => Random().nextBool();
+
+void fn06() => print('FOO');
