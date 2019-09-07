@@ -9,7 +9,7 @@ void main() {
 }
 
 /*
- * async function 返回的是一个 `Future` 对象,
+ * async function 的返回结果是一个 `Future` 对象,
  * 如果返回的值不是一个 `Future` 对象, dart 会自动将它包装成 `Future` 对象 
  */
 
