@@ -3,11 +3,12 @@
  */
 
 /*
- * 可以选择只引入 library 中的某一部分对象
+ * 可以选择只引入 library 中的某一部分对象,
+ * 使用 `show` 表示引入某些对象, 使用 `hide` 表示不引入某些对象
  */
 
-import './02-01-10-01.03.01.dart' as lib01 show foo;
-import './02-01-10-01.03.02.dart' as lib02 hide foo;
+import './02-01-10-01.03.01.dart' as lib01 show foo, baz;
+import './02-01-10-01.03.02.dart' hide foo;
 
 void main() {
   fn01();
@@ -15,5 +16,5 @@ void main() {
 
 void fn01() {
   assert(lib01.foo() == 9);
-  assert(lib02.bar() == 99);
+  assert(bar() == 99);
 }

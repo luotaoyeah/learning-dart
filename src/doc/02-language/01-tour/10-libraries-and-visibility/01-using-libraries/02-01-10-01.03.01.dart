@@ -5,3 +5,7 @@ int foo() {
 int bar() {
   return 9;
 }
+
+int baz() {
+  return 9;
+}
