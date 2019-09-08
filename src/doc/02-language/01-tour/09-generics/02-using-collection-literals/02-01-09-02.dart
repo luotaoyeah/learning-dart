@@ -8,7 +8,7 @@ void main() {
 
 void fn01() {
   /*
-   * List/Set/Map 都是支持泛型的, 那么在使用它们的 literal 时, 如何指定类型?
+   * List/Set/Map 都是支持泛型的, 那么在使用它们的 literal 时, 如何指定类型参数呢 ?
    * 在 literal 前面加上 `<Type>` / `<KeyType, ValueType>`
    */
   var list01 = <int>[1, 2, 3];
