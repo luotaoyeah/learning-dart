@@ -8,8 +8,11 @@ void main() {
 
 void fn01() {
   /*
-   * constructor 有两种: default constructor 和 named constructor,
-   * 使用 constructor 创建实例对象时, 前面的 new 关键字可以省略
+   * constructor 有两种:
+   *   1. default constructor
+   *   2. named constructor
+   *
+   * 使用 constructor 创建实例对象时, 前面的 `new` 关键字可以省略
    */
 
   var c01 = new C01.fn01('FOO');

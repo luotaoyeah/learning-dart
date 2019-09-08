@@ -17,7 +17,7 @@ void fn01() {
 class C01 {
   /*
    * 当声明一个属性时, 实际上会隐式地创建一个 getter/setter,
-   * 如果属性声明为 final, 则只会隐式地创建一个 getter, 没有 setter
+   * 如果属性声明为 `final` 时, 则只会隐式地创建一个 getter, 没有 setter
    */
   num x = 0;
 

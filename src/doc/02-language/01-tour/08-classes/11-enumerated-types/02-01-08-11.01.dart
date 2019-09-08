@@ -10,7 +10,7 @@ void main() {
 enum COLOR { RED, BLUE, GREEN }
 
 /*
- * 使用 index 属性, 获取枚举值的索引
+ * 使用 `index` 属性, 获取枚举值的索引
  */
 void fn01() {
   assert(COLOR.RED.index == 0);
@@ -18,7 +18,7 @@ void fn01() {
 }
 
 /*
- * 使用 values 属性, 获取枚举值的列表
+ * 使用 `values` 属性, 获取枚举值的列表
  */
 void fn02() {
   List<COLOR> values = COLOR.values;

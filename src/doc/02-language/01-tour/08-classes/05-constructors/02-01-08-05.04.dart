@@ -27,7 +27,7 @@ class C01 {
 /*
  * 子类的 constructor 中必须调用父类的 constructor,
  * 如果没有显式调用, 则会默认调用父类的 no-argument default constructor,
- * 如果父类没有 no-argument default constructor, 则子类的 constructor 必须显式调用父类的某个 constructor
+ * 因此如果父类没有 no-argument default constructor, 则子类的 constructor 必须显式调用父类的某个 constructor
  */
 class C02 extends C01 {
   String y = 'Y';

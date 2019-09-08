@@ -22,7 +22,7 @@ class C01 {
   /*
    * 在定义 constructor 的时候, 如果前面加上 `factory`, 表示这是一个 factory constructor,
    * factory constructor 不一定会创建一个新的实例对象, 它可以返回一个已经存在的实例, 或者一个子类实例,
-   * 因为没有创建一个新的实例, 因此构造函数里面不能访问 this
+   * 因为没有创建一个新的实例, 因此构造函数里面不能访问 `this`
    */
   factory C01.fn01() {
     return C01.instance;

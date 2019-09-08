@@ -12,14 +12,14 @@ mixin Mixin01 {
   int x = 9;
 }
 
+class C02 with Mixin01 {}
+
 /*
  * 使用 `on SomeClass` 表示只有 `SomeClass` 及其子类才可以使用这个 mixin
  */
 mixin Mixin02 on C01 {
   int y = 9;
 }
-
-class C02 with Mixin01 {}
 
 /*
  * `C03` 必须继承 `C01`, 否则无法使用 `Mixin02`
