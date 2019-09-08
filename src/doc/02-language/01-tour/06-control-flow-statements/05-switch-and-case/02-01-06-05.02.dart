@@ -11,9 +11,9 @@ void fn01() {
   int condition = 1;
 
   /*
-   * 可以给每个 case 加一个 label, 然后在其他的 case 中使用 `continue someLabel;` 跳转到指定的 case,
+   * 可以给每个 case 加一个标签(label), 然后在其他的 case 中使用 `continue someLabel;` 语句跳转到指定的 case,
    * 表示该 case 执行完毕之后, 直接执行指定的 case, 不再进行条件匹配,
-   * 使用 continue 跳转到的 case 可以在当前 case 的前面
+   * 使用 `continue` 跳转到的 case 可以在当前 case 的前面
    */
   switch (condition) {
     case 1:

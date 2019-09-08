@@ -15,8 +15,7 @@ void fn01() {
     case 0:
       print('ZERO');
       /*
-       * 如果 case 是非空的, 即下面有其他的语句,
-       * 则必须使用 break/continue/return/throw/rethrow 中的某一个来终止
+       * 对于非空的 case, 必须使用 break/continue/return/throw/rethrow 中的某一个来终止匹配, 不能穿透
        */
       break;
     /*
