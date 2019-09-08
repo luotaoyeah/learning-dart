@@ -7,7 +7,7 @@ void main() {
 }
 
 /*
- * Future 类似于 JS 中的 Promise
+ * `Future` 类似于 JS 中的 `Promise`
  */
 Future<int> fn01() {
   return Future.delayed(Duration(seconds: 1), () => 9);

@@ -16,7 +16,7 @@ Stream<String> generateStream() async* {
 }
 
 /*
- * 可以使用 await for 循环, 来读取 stream 中的数据, 直到 stream 关闭
+ * 可以使用 `await for` 循环, 来读取 stream 中的数据, 直到 stream 关闭
  */
 void fn01() async {
   String result = '';
