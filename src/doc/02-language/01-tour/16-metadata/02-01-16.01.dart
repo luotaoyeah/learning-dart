@@ -7,7 +7,7 @@ void main() {
 }
 
 /*
- * dart 中默认可以使用两个注解: `@override`, `@deprecated`
+ * dart 中默认可以使用两个注解: `@override` / `@deprecated`
  */
 
 class C01 {

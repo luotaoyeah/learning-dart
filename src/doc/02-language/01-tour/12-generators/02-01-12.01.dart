@@ -9,8 +9,8 @@ void main() {
 
 /*
  * dart 内置支持两种 generator function:
- *   1. sync generator function, 返回一个 Iterable 对象
- *   2. async generator function, 返回一个 Stream 对象
+ *   1. sync generator function, 返回一个 `Iterable` 对象
+ *   2. async generator function, 返回一个 `Stream` 对象
  */
 
 /*
