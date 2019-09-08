@@ -36,7 +36,7 @@ String throwSomething(int type) {
   } on Exception02 catch (e) {
     /*
      * 可以使用 `on SomeException catch (e)`, 表示当抛出的异常是 SomeException 类型时, 就执行此处的代码,
-     * 并且通过 `catch (e)` 将异常对象捕获到了对象 e 中
+     * 并且通过 `catch (e)` 将异常对象捕获到参数 `e` 中
      */
     result = 'B';
   } catch (e) {

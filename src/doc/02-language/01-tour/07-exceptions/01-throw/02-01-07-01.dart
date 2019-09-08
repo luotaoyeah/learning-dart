@@ -13,7 +13,7 @@ void main() {
  */
 void fn01() {
   /*
-   * 异常/错误的基类有两个, Exception/Error
+   * 异常/错误的基类有两个, `Exception` / `Error`
    */
 
   int i01 = 0;
@@ -27,7 +27,7 @@ void fn01() {
 
 void fn02() {
   /*
-   * throw 可以抛出任意类型的对象, 不一定是 Exception/Error 类型的对象
+   * throw 可以抛出任意类型的对象, 不一定是 `Exception` / `Error` 类型的对象
    */
 
   int i01 = 0;

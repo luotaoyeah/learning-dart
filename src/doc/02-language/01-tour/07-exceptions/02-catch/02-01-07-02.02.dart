@@ -16,6 +16,7 @@ void fn01() {
      * 第一个参数表示异常对象,
      * 第二个参数表示堆栈信息, 是一个 `StackTrace` 类型的对象
      */
-    print(s);
+    assert(e is Error);
+    assert(s is StackTrace);
   }
 }
