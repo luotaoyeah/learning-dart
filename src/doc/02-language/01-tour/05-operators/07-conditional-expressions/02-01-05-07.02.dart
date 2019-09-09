@@ -4,6 +4,7 @@
 
 void main() {
   fn01();
+  fn02();
 }
 
 /*
@@ -12,9 +13,19 @@ void main() {
  *   如果 `x` 等于 `null`, 则将 `y` 赋值给 `x`
  */
 void fn01() {
-  int fn01(int i01) {
-    i01 ??= 99;
-    return i01;
+  int fn01(int x) {
+    x ??= 99;
+    return x;
+  }
+
+  assert(fn01(9) == 9);
+  assert(fn01(null) == 99);
+}
+
+void fn02() {
+  int fn01(int x) {
+    x = x ?? 99;
+    return x;
   }
 
   assert(fn01(9) == 9);

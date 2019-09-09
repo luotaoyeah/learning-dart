@@ -37,7 +37,6 @@ void fn02() {
 class C01 {
   int x = 0;
   int y = 9;
-
   int sum = 0;
 
   int fn01() {

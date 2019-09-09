@@ -53,7 +53,7 @@ class C02 {
     return result;
   }
 
-  set square(double value) {
+  void set square(double value) {
     this.x = sqrt(value);
   }
 }

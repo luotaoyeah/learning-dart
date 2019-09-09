@@ -16,7 +16,7 @@ class C01 {
   C01(this.age);
 
   /*
-   * 可以使用类似 arrow function 的形式定义一个 getter
+   * 可以使用 arrow function 的形式定义一个 getter
    */
   String get ageStr => this.age.toString();
 
