@@ -34,4 +34,5 @@ void fn02() {
    * 注意, 如下定义的是一个 empty map
    */
   var map01 = {};
+  assert(map01 is Map);
 }

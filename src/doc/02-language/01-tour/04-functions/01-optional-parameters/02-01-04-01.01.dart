@@ -28,7 +28,7 @@ String fn01({String x, int y}) {
 }
 
 /*
- * 可以使用 @required 来标识一个参数是必须传的
+ * 可以使用 `@required` 来标识一个 named parameter 是必须传的
  */
 int fn02({int x, @required int y}) {
   return (x == null ? 0 : x) + y;
