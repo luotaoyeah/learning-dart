@@ -21,8 +21,8 @@ void main() {
 
 /*
  * 使用如下的形式, 定义了两个 named parameters,
- * named parameter 表示传参的时候, 必须指定参数的名字, 而参数的顺序可以是任意的,
- * named parameters 默认都是可选的, 如果调用的时候没有传值, 则该参数的默认值为 null
+ * named parameters 表示传参的时候, 必须指定参数的名字, 而参数的顺序可以是任意的,
+ * named parameters 默认都是可选的, 如果调用的时候没有传值, 则该参数的默认值为 `null`
  */
 String fn01({String x, int y}) {
   return ((x != null ? x : 'NULL') + y.toString());

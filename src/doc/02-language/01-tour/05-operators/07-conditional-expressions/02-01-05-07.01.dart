@@ -9,7 +9,9 @@ void main() {
 
 /*
  * `expr1 ?? expr2`
- * 这种表达式的含义是: 如果 expr1 不为 `null` 则返回 expr1, 否则返回 expr2
+ * 这种表达式的含义是:
+ *   如果 expr1 不为 `null`, 则返回 expr1
+ *   如果 expr1 等于 `null`, 则返回 expr2
  */
 void fn01() {
   int fn01(int x, int y) {
