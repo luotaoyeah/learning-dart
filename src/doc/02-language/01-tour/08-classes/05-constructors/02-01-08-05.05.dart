@@ -17,7 +17,12 @@ class C01 {
 
   C01(this.x);
 
-  C01.fn01(this.x) {
+  /*
+   * 构造函数的参数列表括号跟函数体之间, 可以包含多个 initializer, 使用逗号分隔, 称之为 initializer list
+   */
+  C01.fn01() : x = "X" {}
+
+  C01.fn02(this.x) {
     print('C01.fn01()');
   }
 }
@@ -27,13 +32,12 @@ class C02 extends C01 {
   final String z;
 
   /*
-   * 在调用 super constructor 之前, 可以包含多个 initializer, 使用逗号分隔, 称之为 initializer list,
-   * 如果调用了 super constructor, 则 super constructor 必须在 initializer list 的最后面, 使用逗号分隔
+   * 如果调用了 super constructor, 则 super constructor 必须放在 initializer list 的最后面, 使用逗号分隔
    */
   C02.fn01(String y)
       : y = y.toUpperCase(),
         z = y.toLowerCase(),
-        super.fn01('FOO') {
+        super.fn02('FOO') {
     print('C02.fn01()');
   }
 
@@ -43,5 +47,5 @@ class C02 extends C01 {
   C02.fn02(String y)
       : assert(y.isNotEmpty),
         z = y.toLowerCase(),
-        super.fn01('X') {}
+        super.fn02('X') {}
 }
