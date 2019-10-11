@@ -7,7 +7,7 @@ void main() {
 }
 
 /*
- * 如下方式, 定义一个类型别名, 直接使用函数名称作为别名
+ * 如下方式, 定义一个类型别名, 直接使用函数名称作为别名, 没有使用等号赋值
  */
 typedef bool SomeCallback(int x, int y);
 
