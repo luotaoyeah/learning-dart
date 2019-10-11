@@ -22,10 +22,8 @@ void main() {
  * 这样, 在使用文档工具生成 HTML 文档之后, 这些引用对象会变成超链接, 链接到对应的页面
  */
 
-///
 /// [name] is of type [String],
 /// [age] is of type [int]
-///
 void fn01({String name, int age}) {}
 
 /**

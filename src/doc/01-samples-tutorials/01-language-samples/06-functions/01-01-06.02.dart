@@ -15,9 +15,6 @@ void main() {
   fn01((i) => i * i);
 }
 
-/**
- *
- */
 void fn01(int Function(int i) cb) {
   print([1, 2, 3].map(cb));
 }

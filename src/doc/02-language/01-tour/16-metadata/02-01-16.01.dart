@@ -6,10 +6,7 @@ void main() {
   fn01();
 }
 
-/*
- * dart 中默认可以使用两个注解: `@override` 和 `@deprecated`
- */
-
+/// dart 中默认可以使用两个注解: [override] 和 [deprecated]
 class C01 {
   fn01() {}
 }

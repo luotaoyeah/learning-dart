@@ -8,10 +8,8 @@ void main() {
   fn03();
 }
 
-/*
- * `is`
- * 用来判断某个对象是否属于某个类型
- */
+/// `is`
+/// 用来判断某个对象是否属于某个类型
 fn01() {
   assert(2 is int);
   assert('a' is String);
@@ -24,19 +22,15 @@ fn01() {
   assert(null is Object);
 }
 
-/*
- * `is!`
- * 用来判断某个对象是否不属于某个类型
- */
+/// `is!`
+/// 用来判断某个对象是否不属于某个类型
 void fn02() {
   assert(2 is! bool);
   assert(false is! List);
 }
 
-/*
- * `as`
- * 用来转换类型
- */
+/// `as`
+/// 用来转换类型
 void fn03() {
   dynamic v01 = 'foo';
   assert((v01 as String).toUpperCase() == 'FOO');
