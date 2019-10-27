@@ -22,7 +22,7 @@ mixin Mixin02 on C01 {
 }
 
 /*
- * `C03` 必须继承 `C01`, 否则无法使用 `Mixin02`
+ * 如下, `C03` 必须继承 `C01`, 否则无法使用 `Mixin02`
  */
 class C03 extends C01 with Mixin02 {}
 
