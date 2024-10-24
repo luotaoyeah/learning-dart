@@ -67,3 +67,35 @@ class C02 with M01, M02 {
     return 9;
   }
 }
+
+// 每个 class 都是一个隐式的 interface,
+class C03 implements C02 {
+  @override
+  int x = 8;
+
+  @override
+  int y = 8;
+
+  @override
+  int z = 8;
+
+  @override
+  int fn01() {
+    throw UnimplementedError();
+  }
+
+  @override
+  int fn02() {
+    // TODO: implement fn02
+    throw UnimplementedError();
+  }
+}
+
+// abstract class
+abstract class C04 {
+  // abstract function
+  void fn01();
+
+  // concrete function
+  void fn02() {}
+}
