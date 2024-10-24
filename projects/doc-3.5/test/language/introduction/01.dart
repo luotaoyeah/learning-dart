@@ -6,6 +6,11 @@ void main() {
     // 创建类的实例时不需要使用 new 关键字
     expect(C01.name03().name, 'HELLO');
   });
+
+  // https://dart.dev/language#enums
+  test('02', () {
+    expect(E02.A.toString(), 'E02.A');
+  });
 }
 
 class C01 {
@@ -24,4 +29,14 @@ class C01 {
   C01.name02(this.name);
 
   C01.name03() : this.name02('HELLO');
+}
+
+enum E01 { A, B, C }
+
+enum E02 {
+  A('A');
+
+  final String? name;
+
+  const E02(this.name);
 }
