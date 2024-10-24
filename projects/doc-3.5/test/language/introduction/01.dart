@@ -11,6 +11,13 @@ void main() {
   test('02', () {
     expect(E02.A.toString(), 'E02.A');
   });
+
+  // https://dart.dev/language#mixins
+  test('03', () {
+    expect(C02().x, 9);
+    expect(C02().y, 9);
+    expect(C02().z, 9);
+  });
 }
 
 class C01 {
@@ -39,4 +46,24 @@ enum E02 {
   final String? name;
 
   const E02(this.name);
+}
+
+mixin M01 {
+  int x = 9;
+
+  int fn01() {
+    return 9;
+  }
+}
+
+mixin M02 {
+  int z = 9;
+}
+
+class C02 with M01, M02 {
+  int y = 9;
+
+  int fn02() {
+    return 9;
+  }
 }
