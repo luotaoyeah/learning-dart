@@ -57,6 +57,17 @@ void main() {
     // 如下, fn02() 不会被立即调用, 而是在 s02 被使用的时候才会调用,
     late String s02 = fn02();
   });
+
+  // https://dart.dev/language/variables#final-and-const
+  test("05", () {
+    final int f01;
+
+    // final 变量只能被赋值一次, 这个赋值可以在声明时赋值, 也可以在声明后赋值,
+    f01 = 0;
+
+    // const 变量必须在声明时赋值, 值必须是编译时的常量,
+    const int i01 = 0;
+  });
 }
 
 String fn01() {
