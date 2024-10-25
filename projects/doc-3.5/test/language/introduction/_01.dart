@@ -18,6 +18,13 @@ void main() {
     expect(C02().y, 9);
     expect(C02().z, 9);
   });
+
+  // https://dart.dev/language#async
+  test('04', () async {
+    print(DateTime.now());
+    await fn01();
+    print(DateTime.now());
+  });
 }
 
 class C01 {
@@ -98,4 +105,10 @@ abstract class C04 {
 
   // concrete function
   void fn02() {}
+}
+
+// 异步,
+Future<bool> fn01() async {
+  await Future.delayed(Duration(milliseconds: 1000));
+  return Future.value(true);
 }
