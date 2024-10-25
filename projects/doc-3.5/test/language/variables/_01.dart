@@ -1,5 +1,7 @@
 import 'package:test/test.dart';
 
+String description;
+
 void main() {
   // https://dart.dev/language/variables
   test("01", () {
@@ -25,5 +27,15 @@ void main() {
 
     v01 = 'a';
     expect(v01.toUpperCase() != null, true);
+  });
+
+  // https://dart.dev/language/variables#default-value
+  test("03", () {
+    int i01;
+
+    // 不可为空的变量, 在使用它之前必须先赋值,
+    i01 = 0;
+
+    expect(i01 == 0, true);
   });
 }
