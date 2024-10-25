@@ -19,4 +19,19 @@ void main() {
     expect(s01 == s02, true);
     expect(identical(s01, s02), true);
   });
+
+  // https://dart.dev/language/operators#assignment-operators
+  test('03', () {
+    String value = 'A';
+
+    String? a;
+    String b = 'B';
+
+    // 操作符 ??= 的含义: 如果 a 为 null, 则将 value 赋值给 a, 否则不做操作,
+    a ??= value;
+    b ??= value;
+
+    expect(a == 'A', true);
+    expect(b == 'B', true);
+  });
 }
