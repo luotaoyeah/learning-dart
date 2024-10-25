@@ -27,11 +27,22 @@ void main() {
     String? a;
     String b = 'B';
 
-    // 操作符 ??= 的含义: 如果 a 为 null, 则将 value 赋值给 a, 否则不做操作,
+    // 操作符 a ??= value 的含义: 如果 a 为 null, 则将 value 赋值给 a, 否则不做操作,
     a ??= value;
     b ??= value;
 
     expect(a == 'A', true);
     expect(b == 'B', true);
+  });
+
+  // https://dart.dev/language/operators#conditional-expressions
+  test('04', () {
+    // 操作符 a ?? b 的含义: 如果 a 不为 null, 则表达式的值为 a, 否则为 b,
+
+    String? a;
+    String b = 'B';
+    String c = a ?? b;
+
+    expect(c == 'B', true);
   });
 }
