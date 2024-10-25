@@ -1,6 +1,10 @@
 import 'package:test/test.dart';
 
-String description;
+// late 关键字的第一种用法:
+//     对于 top level 变量和 instance variable, 如果他们不能为空,
+//     并且他们的赋值是在他们的声明之后, 则 dart 无法判断他们已经被赋值了, 需要我们手动添加 late 关键字告诉 dart 他们已经赋值了,
+//     当然如果实际上他们确实没有赋值, 则在运行时会抛出错误,
+late String description;
 
 void main() {
   // https://dart.dev/language/variables
@@ -38,4 +42,31 @@ void main() {
 
     expect(i01 == 0, true);
   });
+
+  // https://dart.dev/language/variables#late-variables
+  test("04", () {
+    description = 'HELLO';
+    print(description);
+
+    // late 关键字的第二种用法,
+    //     用于变量的延迟初始化,
+
+    // 如下, fn01() 会被立即调用,
+    String s01 = fn01();
+
+    // 如下, fn02() 不会被立即调用, 而是在 s02 被使用的时候才会调用,
+    late String s02 = fn02();
+  });
+}
+
+String fn01() {
+  print('fn01()');
+
+  return 'fn01';
+}
+
+String fn02() {
+  print('fn02()');
+
+  return 'fn02';
 }
