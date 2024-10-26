@@ -12,5 +12,25 @@ void main() {
     (String a, String, {int c, bool d}) record = ('A', c: 1, d: true, 'B');
 
     // 在 record 表达式中, named 字段需要通过 name: value 的形式来指定它的值, 并且 named 字段的位置可以任意,
+
+    // 将 record 中的多个字段 destructure 到不同的变量中,
+    var (x, y, :d, :c) = record;
+
+    expect(x == 'A', true);
+    expect(y == 'B', true);
+    expect(c == 1, true);
+    expect(d == true, true);
+  });
+
+  // https://dart.dev/language/records#record-fields
+  test("02", () {
+    (String, String, {String c, String d}) record01 =
+        ('A', d: 'D', c: 'C', 'B');
+
+    // 使用如下的方式分别访问 positional 字段和 named 字段,
+    expect(record01.$1, 'A');
+    expect(record01.$2, 'B');
+    expect(record01.c, 'C');
+    expect(record01.d, 'D');
   });
 }
