@@ -46,4 +46,34 @@ void main() {
       expect(null is Null, true);
     },
   );
+
+  // https://dart.dev/language/functions#generators
+  test(
+    '03',
+    () {
+      // 使用 sync* 标注的 generator 函数, 是一个 sync generator function, 返回类型为 Iterable<T>,
+      Iterable<int> fn01() sync* {
+        for (int i = 1; i <= 3; i++) {
+          yield i;
+        }
+      }
+
+      // 使用 async* 标注的 generator 函数, 是一个 async generator function, 返回类型为 Stream<T>,
+      Stream<int> fn02() async* {
+        for (int i = 1; i <= 3; i++) {
+          yield i;
+        }
+      }
+
+      for (var value in fn01()) {
+        print(value);
+      }
+
+      fn02().forEach(
+        (element) {
+          print(element);
+        },
+      );
+    },
+  );
 }
