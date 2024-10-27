@@ -29,4 +29,21 @@ void main() {
       ;
     },
   );
+
+  // https://dart.dev/language/functions#return-values
+  test(
+    '02',
+    () {
+      // 函数没有声明返回类型, 则默认返回 null,
+      fn01() {}
+
+      // 显式声明返回类型为 Null,
+      Null fn02() {}
+
+      expect(fn01(), null);
+      expect(fn02(), null);
+
+      expect(null is Null, true);
+    },
+  );
 }
